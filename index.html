@@ -1,12 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Om Suryawanshi | First-Year Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div>this is a container</div>
+  
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#home" class="brand-logo" aria-label="Om Suryawanshi Home">
+        <span class="brand-mark">OS</span>
+        <span>Om Suryawanshi</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        &#9776;
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="home" class="hero-section">
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <div class="hero-badge">First-Year Engineering Student</div>
+          <h1 class="hero-title">
+            Welcome!😊 I&apos;m <span>Om Suryawanshi</span>.
+          </h1>
+          <p class="hero-description">
+            I&apos;m a first-year engineering student passionate about building clean,
+            responsive web interfaces, exploring embedded hardware, and solving
+            practical engineering problems with code and design.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="profile-frame">
+            <img
+              src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%23eef2ff'/><stop offset='100%25' stop-color='%23e0e7ff'/></linearGradient></defs><rect width='240' height='240' fill='url(%23g)'/><circle cx='120' cy='92' r='38' fill='%234f46e5' opacity='0.88'/><path d='M52 212c0-38 30-66 68-66s68 28 68 66' fill='%234f46e5' opacity='0.88'/></svg>"
+              alt="Profile avatar placeholder for Om Suryawanshi"
+            />
+          </div>
+          <span class="profile-caption">Replace with your profile photo</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Introduction, Education &amp; Goals</h2>
+          <p class="section-subtitle">
+            A quick overview of my academic foundation, technical curiosity, and
+            where I&apos;m headed as an engineering student.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">&#128075;</div>
+            <h3>Who I Am</h3>
+            <p>
+              I&apos;m Om Suryawanshi, a curious and hands-on first-year engineering
+              student who enjoys turning ideas into structured, user-friendly
+              digital and hardware prototypes.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">&#127891;</div>
+            <h3>Educational Background</h3>
+            <p>
+              Currently pursuing a Bachelor&apos;s degree in Engineering (First Year,
+              [Your College / University Name]), focusing on core mathematics,
+              engineering graphics, programming fundamentals, and web technologies.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-icon" aria-hidden="true">&#127919;</div>
+            <h3>Interests &amp; Career Goals</h3>
+            <p>
+              I&apos;m interested in full-stack web development, embedded systems, and
+              CAD modeling. My goal is to build accessible software and smart
+              hardware systems that solve real-world campus and community challenges.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Technical &amp; Professional Skills</h2>
+          <p class="section-subtitle">
+            Core languages, web standards, and collaboration skills I&apos;m actively
+            building during my first year.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3 class="skill-name">HTML5</h3>
+              <span class="skill-badge">90%</span>
+            </div>
+            <p class="skill-desc">
+              Semantic markup, accessible forms, structured layouts, and native
+              input validation.
+            </p>
+            <div class="progress-track" aria-label="HTML5 proficiency 90%">
+              <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3 class="skill-name">CSS3 &amp; Responsive Design</h3>
+              <span class="skill-badge">85%</span>
+            </div>
+            <p class="skill-desc">
+              Flexbox, CSS Grid, custom properties, hover transitions, and
+              mobile-first media queries.
+            </p>
+            <div class="progress-track" aria-label="CSS3 proficiency 85%">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3 class="skill-name">C &amp; C++ Programming</h3>
+              <span class="skill-badge">80%</span>
+            </div>
+            <p class="skill-desc">
+              Structured problem-solving, control flow, arrays, functions, and
+              microcontroller logic.
+            </p>
+            <div class="progress-track" aria-label="C and C++ proficiency 80%">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3 class="skill-name">Python Basics</h3>
+              <span class="skill-badge">75%</span>
+            </div>
+            <p class="skill-desc">
+              Scripting, data handling, and automating small engineering
+              calculations.
+            </p>
+            <div class="progress-track" aria-label="Python proficiency 75%">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3 class="skill-name">Git &amp; GitHub</h3>
+              <span class="skill-badge">75%</span>
+            </div>
+            <p class="skill-desc">
+              Version control workflows, branching, commit hygiene, and
+              collaborative code hosting.
+            </p>
+            <div class="progress-track" aria-label="Git proficiency 75%">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-top">
+              <h3 class="skill-name">Engineering CAD &amp; Teamwork</h3>
+              <span class="skill-badge">80%</span>
+            </div>
+            <p class="skill-desc">
+              Orthographic drafting, 3D part modeling, technical documentation,
+              and lab teamwork.
+            </p>
+            <div class="progress-track" aria-label="CAD and Teamwork proficiency 80%">
+              <div class="progress-fill" style="width: 80%;"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">Featured Engineering Projects</h2>
+          <p class="section-subtitle">
+            Sample first-year builds showcasing hardware prototyping and
+            precision engineering design.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img
+                src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/pscif4gtj9pyxcoglt8s"
+                alt="Microcontroller board connected to environmental sensors on a breadboard"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Smart Lab Environment Monitor</h3>
+              <p class="project-desc">
+                Built a compact microcontroller prototype using temperature and
+                humidity sensors with status LEDs to monitor study-room comfort
+                and alert when ventilation is needed.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Arduino / C++</span>
+                <span class="project-tag">Sensors</span>
+                <span class="project-tag">Breadboard Prototyping</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-thumb">
+              <img
+                src="https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/ozzxqvzdf4ilv1diixs5"
+                alt="3D CAD wireframe of a spur gear assembly and structural truss"
+              />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gear Train &amp; Truss CAD Assembly</h3>
+              <p class="project-desc">
+                Designed a parametric spur-gear drive mounted on a lightweight
+                truss frame for a first-year engineering graphics assignment,
+                focusing on clearance, alignment, and load paths.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">3D CAD</span>
+                <span class="project-tag">Engineering Graphics</span>
+                <span class="project-tag">Structural Design</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">
+            Have a project idea, collaboration, or question? Send a message using
+            the form below.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <aside class="contact-info-card">
+            <h3>Contact Information</h3>
+            <p>
+              I&apos;m open to student hackathons, study collaborations, and
+              first-year engineering internships.
+            </p>
+            <ul class="contact-detail-list">
+              <li>
+                <span class="contact-detail-label">Name</span>
+                <span>Om Suryawanshi</span>
+              </li>
+              <li>
+                <span class="contact-detail-label">Email</span>
+                <a href="mailto:omsuryawanshi404@gmail.com">omsuryawanshi404@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-detail-label">Role</span>
+                <span>First-Year Engineering Student</span>
+              </li>
+            </ul>
+          </aside>
+
+          <form class="contact-form" id="contactForm" action="#" method="post">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="fullName">Full Name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  required
+                  minlength="2"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What is your message about?"
+                required
+                minlength="3"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+                minlength="10"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        &copy; 2026 <strong>Om Suryawanshi</strong>. All rights reserved.
+      </p>
+      <ul class="social-links" aria-label="Social Media Links">
+        <li>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li>
+          <a href="mailto:omsuryawanshi404@gmail.com">Email</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const navLinks = document.getElementById("navLinks");
+    const contactForm = document.getElementById("contactForm");
+    const formStatus = document.getElementById("formStatus");
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          navToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+    }
+
+    if (contactForm && formStatus) {
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!contactForm.checkValidity()) {
+          contactForm.reportValidity();
+          return;
+        }
+        const name = document.getElementById("fullName").value.trim();
+        formStatus.textContent = `Thank you, ${name}! Your message has been validated and recorded.`;
+        formStatus.classList.add("visible");
+        contactForm.reset();
+      });
+    }
+  </script>
 </body>
 </html>
